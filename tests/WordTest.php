@@ -12,14 +12,15 @@ class WordTest extends TestCase
     private $wordTransformer;
     private $numberTransformer;
 
-    public function setUp(): void
+    public function setUp() : void
     {
-        parent::setUp();
+    
         $numberToWords = new NumberToWords();
         $this->numberTransformer = $numberToWords->getNumberTransformer('en');
 
         $wordToNumber = new WordToNumber();
         $this->wordTransformer = $wordToNumber->getWordTransformer();
+        return;
     }
 
     public function testWordTransformerCanBeConstructed()
