@@ -6,6 +6,7 @@
 [![Build Status](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/build.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/?branch=master)
+[![StyleCI](https://github.styleci.io/repos/224523383/shield?branch=master)](https://github.styleci.io/repos/224523383)
 
 This PHP package allows you convert numbers written in words to integers
 
