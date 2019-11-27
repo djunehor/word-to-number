@@ -1,0 +1,46 @@
+{
+  "name": "djunehor/word-to-number",
+  "description": "Transform words to numbers",
+  "keywords": [
+    "word",
+    "number",
+    "word-to-number",
+    "php",
+    "djunehor",
+    "laravel",
+    "laravel-package"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Zacchaeus Bolaji",
+      "email": "djunehor@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+    "require": {
+        "php": "~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+    "kwn/number-to-words": "dev-master"
+
+    },
+  "autoload": {
+    "psr-4": {
+      "Djunehor\\Number\\": "src/"
+    },
+      "files": [
+          "src/Helpers/helpers.php"
+      ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Djunehor\\Number\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit tests"
+  }
+}
