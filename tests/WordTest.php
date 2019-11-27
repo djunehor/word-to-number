@@ -17,7 +17,6 @@ class WordTest extends TestCase
      */
     public function setUp() : void
     {
-
         $numberToWords = new NumberToWords();
         $this->numberTransformer = $numberToWords->getNumberTransformer('en');
 
@@ -41,10 +40,9 @@ class WordTest extends TestCase
         }
     }
 
-
     public function testCanConvertWordToNumber()
     {
-        for($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 1000; $i++) {
             $number = rand(1, 1000000);
             $word = $this->numberTransformer->toWords($number);
             $wordToNumber = $this->wordTransformer->toNumber($word);
@@ -54,12 +52,11 @@ class WordTest extends TestCase
 
     public function testCanConvertWordToNumberViaHelper()
     {
-        for($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 1000; $i++) {
             $number = rand(1, 1000000);
             $word = $this->numberTransformer->toWords($number);
             $wordToNumber = word_to_number($word);
             $this->assertEquals($number, $wordToNumber);
         }
     }
-
 }

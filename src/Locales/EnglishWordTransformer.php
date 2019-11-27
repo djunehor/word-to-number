@@ -1,14 +1,11 @@
 <?php
 
-
 namespace Djunehor\Number\Locales;
-
 
 use SplStack;
 
 class EnglishWordTransformer implements WordTransformer
 {
-
     public function toNumber(string $word): int
     {
         $data = strtolower(trim($word));
@@ -16,7 +13,7 @@ class EnglishWordTransformer implements WordTransformer
         // Replace all number words with an equivalent numeric value
         $data = strtr(
             $data,
-            array(
+            [
                 'zero' => '0',
                 'a' => '1',
                 'one' => '1',
@@ -52,7 +49,7 @@ class EnglishWordTransformer implements WordTransformer
                 'million' => '1000000',
                 'billion' => '1000000000',
                 'and' => '',
-            )
+            ]
         );
 
         // Coerce all tokens to numbers
@@ -68,7 +65,7 @@ class EnglishWordTransformer implements WordTransformer
         $last = null;
 
         foreach ($parts as $part) {
-            if (!$stack->isEmpty()) {
+            if (! $stack->isEmpty()) {
                 // We're part way through a phrase
                 if ($stack->top() > $part) {
                     // Decreasing step, e.g. from hundreds to ones

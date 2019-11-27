@@ -5,6 +5,7 @@ if (! function_exists('word_to_number')) {
     {
         $wordToNumber = new \Djunehor\Number\WordToNumber();
         $transformer = $wordToNumber->getWordTransformer($locale);
+
         return $transformer->toNumber($word);
     }
 }
