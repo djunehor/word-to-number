@@ -1,4 +1,11 @@
 # Word To Number
+[![CircleCI](https://circleci.com/gh/djunehor/word-to-number.svg?style=svg)](https://circleci.com/gh/djunehor/word-to-number)
+[![Latest Stable Version](https://poser.pugx.org/djunehor/word-to-number/v/stable)](https://packagist.org/packages/djunehor/word-to-number)
+[![Total Downloads](https://poser.pugx.org/djunehor/word-to-number/downloads)](https://packagist.org/packages/djunehor/word-to-number)
+[![License](https://poser.pugx.org/djunehor/laravel-sms/license)](https://packagist.org/packages/djunehor/laravel-sms)
+[![Build Status](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/build.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/?branch=master)
 
 This PHP package allows you convert numbers written in words to integers
 
