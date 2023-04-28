@@ -8,7 +8,7 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/djunehor/word-to-number/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/djunehor/word-to-number/?branch=master)
 [![StyleCI](https://github.styleci.io/repos/224523383/shield?branch=master)](https://github.styleci.io/repos/224523383)
 
-This PHP package allows you convert numbers written in words to integers
+This PHP package allows you to convert numbers written in words to integers.
 
 - [Laravel Grammar](#word-to-number)
     - [Installation](#installation)
@@ -37,7 +37,7 @@ $number = $wordTransformer->toNumber($word);
 ### Via Helper
 ```php
 $number = word_to_number($word);
-//default locale is en
+// default locale is en
 
 $number = word_to_number($word, 'yo');
 // specify Yoruba locale
@@ -47,6 +47,7 @@ $number = word_to_number($word, 'yo');
 |Language|Code|Test|
 |:--------- | :-----------------: | :------: |
 |English|en|Yes|
+|French|fr|Yes|
 
 ## Adding New Locale
 - In `Locales` directory, create `YourLocaleTransformer` class that implements `WordTransformer`
