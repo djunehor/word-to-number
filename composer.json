@@ -26,7 +26,7 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^6|^7|^8|^9|^10",
-    "kwn/number-to-words": "^2"
+    "kwn/number-to-words": "^1|^2"
   },
   "autoload": {
     "psr-4": {
