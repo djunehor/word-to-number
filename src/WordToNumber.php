@@ -15,13 +15,14 @@ class WordToNumber
     ];
 
     /**
-     * @param string $language
+     * @param  string  $language
      * @return WordTransformer
+     *
      * @throws InvalidArgumentException
      */
     public function getWordTransformer(string $language = 'en'): WordTransformer
     {
-        if (!\array_key_exists($language, $this->wordTransformers)) {
+        if (! \array_key_exists($language, $this->wordTransformers)) {
             throw new InvalidArgumentException(sprintf(
                 'Word transformer for "%s" language is not implemented.',
                 $language

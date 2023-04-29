@@ -11,9 +11,9 @@ use PHPUnit\Framework\TestCase;
 
 abstract class FuzzyWordTestBase extends TestCase
 {
-    /** @var WordTransformer $wordTransformer */
+    /** @var WordTransformer */
     protected $wordTransformer;
-    /** @var NumberTransformer $numberTransformer */
+    /** @var NumberTransformer */
     protected $numberTransformer;
 
     protected function getLang(): string
