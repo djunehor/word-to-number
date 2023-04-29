@@ -12,6 +12,7 @@ class EnglishWordTransformer implements WordTransformer
             $word,
             [
                 'zero' => '0',
+                'no' => '0',
                 'none' => '0',
                 'a' => '1',
                 'one' => '1',
